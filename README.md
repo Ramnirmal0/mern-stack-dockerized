@@ -13,7 +13,7 @@
 <p> Step 1 : clone the repository</p>
 open terminal (ctrl + alt + T ):<br>
 
-```
+```sh
   cd Desktop
   git clone <repo-https-link>
 ```
@@ -21,17 +21,16 @@ open terminal (ctrl + alt + T ):<br>
   <p> Step 2 : run docker-compose file</p>
   Note: make sure you have ubuntu , docker and docker-compose installed . if showing error <a href="https://docs.docker.com/compose/install/">click here for instructions</a><br>
   
-```
+```sh
     cd mern-stack-dockerized
     docker-compose up
 ```
   
   <p> step 3 : open browser for result</p>
   go to following ports to see results<br>
-  
-```
+
   react-app : <a href="http://localhost:3000/">http://localhost:3000/</a>
   express-app: <a href="http://localhost:8000/">http://localhost:8000/</a>
-```
+
 <br>
   <h3> That's all . now edit the code and enjoy coding</h3>
