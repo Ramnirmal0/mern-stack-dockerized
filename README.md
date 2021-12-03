@@ -1,3 +1,10 @@
-# mern-stack-dockerized
+# Welcome to MERN Stack Dockerized Boilerplate
 
-<h1><a href="">Follow the instructions below</a></h1>
+<p>This repo is made for making a boilerplate MERN stack application with dokerfile and docker-compose.below mentioned all details regarding the files inside this repo</p>
+<hr>
+<h3>Folder strcutures</h3>
+<p>
+  -> client-app (react appliation)<br>
+  -> api-server (express application)<br>
+  -> docker-compose file
+</p>
