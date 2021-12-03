@@ -16,7 +16,6 @@ open terminal (ctrl + alt + T ):<br>
 ```sh
   cd Desktop
 ```
-<br>
 ```sh
   git clone https://github.com/Ramnirmal0/mern-stack-dockerized.git
 ```
@@ -27,7 +26,6 @@ open terminal (ctrl + alt + T ):<br>
 ```sh
     cd mern-stack-dockerized
 ```
-<br>
 ```sh
     docker-compose up
 ```
