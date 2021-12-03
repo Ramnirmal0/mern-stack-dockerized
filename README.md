@@ -11,20 +11,25 @@
 
 <h3>Get started</h3>
 <p> Step 1 : clone the repository</p>
-open terminal (ctrl + alt + T ):
-<code>
+open terminal (ctrl + alt + T ):<br>
+
+```
   cd Desktop
   git clone <repo-https-link>
-  </code>
+```
+  
   <p> Step 2 : run docker-compose file</p>
-  Note: make sure you have ubuntu , docker and docker-compose installed . if showing error <a href="https://docs.docker.com/compose/install/">click here for instructions</a>
-  <code>
+  Note: make sure you have ubuntu , docker and docker-compose installed . if showing error <a href="https://docs.docker.com/compose/install/">click here for instructions</a><br>
+  
+```
     cd mern-stack-dockerized
     docker-compose up
-  </code>
+```
+  
   <p> step 3 : open browser for result</p>
   go to following ports to see results
+  ```
   react-app : <a href="http://localhost:3000/">http://localhost:3000/</a>
   express-app: <a href="http://localhost:8000/">http://localhost:8000/</a>
-  
+  ```
   <h3> That's all . now edit the code and enjoy coding</h3>
