@@ -15,7 +15,10 @@ open terminal (ctrl + alt + T ):<br>
 
 ```sh
   cd Desktop
-  git clone <repo-https-link>
+```
+<br>
+```sh
+  git clone https://github.com/Ramnirmal0/mern-stack-dockerized.git
 ```
   
   <p> Step 2 : run docker-compose file</p>
@@ -23,6 +26,9 @@ open terminal (ctrl + alt + T ):<br>
   
 ```sh
     cd mern-stack-dockerized
+```
+<br>
+```sh
     docker-compose up
 ```
   
