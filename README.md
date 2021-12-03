@@ -27,9 +27,11 @@ open terminal (ctrl + alt + T ):<br>
 ```
   
   <p> step 3 : open browser for result</p>
-  go to following ports to see results
-  ```
+  go to following ports to see results<br>
+  
+```
   react-app : <a href="http://localhost:3000/">http://localhost:3000/</a>
   express-app: <a href="http://localhost:8000/">http://localhost:8000/</a>
-  ```
+```
+<br>
   <h3> That's all . now edit the code and enjoy coding</h3>
