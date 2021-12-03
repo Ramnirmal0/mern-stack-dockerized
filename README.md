@@ -10,8 +10,8 @@
 </p>
 
 <h3>Get started</h3>
-<p> Step 1 : clone the repository</p>
-open terminal (ctrl + alt + T ):<br>
+<p> <b>Step 1 : clone the repository</b></p>
+open terminal (ctrl + alt + T ):<br><br>
 
 ```sh
   cd Desktop
@@ -20,8 +20,8 @@ open terminal (ctrl + alt + T ):<br>
   git clone https://github.com/Ramnirmal0/mern-stack-dockerized.git
 ```
   
-  <p> Step 2 : run docker-compose file</p>
-  Note: make sure you have ubuntu , docker and docker-compose installed . if showing error <a href="https://docs.docker.com/compose/install/">click here for instructions</a><br>
+  <p> <b>Step 2 : run docker-compose file</b></p>
+  Note: make sure you have ubuntu , docker and docker-compose installed . if showing error <a href="https://docs.docker.com/compose/install/">click here for instructions</a><br><br>
   
 ```sh
     cd mern-stack-dockerized
@@ -30,8 +30,8 @@ open terminal (ctrl + alt + T ):<br>
     docker-compose up
 ```
   
-  <p> step 3 : open browser for result</p>
-  go to following ports to see results<br>
+  <p> <b>step 3 : open browser for result</b></p>
+  go to following ports to see results<br><br>
 
   react-app : <a href="http://localhost:3000/">http://localhost:3000/</a>
   express-app: <a href="http://localhost:8000/">http://localhost:8000/</a>
