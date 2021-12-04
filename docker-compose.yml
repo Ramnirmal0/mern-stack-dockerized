@@ -1,13 +1,13 @@
 version: "3"
 services:
     client-app:
-        image: client-app
+        build: ./client-app
         ports:
           - 3000:3000
         volumes:
           - ./client-app/src:/app/src:ro
     api-server:
-        image: api-server
+        build: ./api-server
         ports:
           - 8000:8000
 
