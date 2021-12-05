@@ -1,9 +1,3 @@
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-const cors=require('cors');
-const PORT = process.env.PORT || 8000;
-const database = require('./database');
 const fakeData = [{"id":{"$oid":"61aca312fc13ae32b4000000"},"title":"Dead Meat","genres":"Horror","rating":3.0,"director":"Mari Fowls","image_url":"http://dummyimage.com/350x250.png/ff4444/ffffff","production":"Predovic-Emmerich"},
 {"id":{"$oid":"61aca312fc13ae32b4000001"},"title":"I'm Going Home (Je rentre à la maison)","genres":"Comedy|Drama","rating":3.6,"director":"Cherie Abramowitch","image_url":"http://dummyimage.com/350x250.png/dddddd/000000","production":"Wehner, Gaylord and Crooks"},
 {"id":{"$oid":"61aca312fc13ae32b4000002"},"title":"Incredible Hulk, The","genres":"Action|Sci-Fi","rating":4.5,"director":"Guthry Groome","image_url":"http://dummyimage.com/350x250.png/dddddd/000000","production":"White, Brakus and Kohler"},
@@ -24,26 +18,3 @@ const fakeData = [{"id":{"$oid":"61aca312fc13ae32b4000000"},"title":"Dead Meat",
 {"id":{"$oid":"61aca312fc13ae32b4000011"},"title":"Dream Team, The","genres":"Comedy","rating":3.4,"director":"Gabby Seawell","image_url":"http://dummyimage.com/350x250.png/ff4444/ffffff","production":"Macejkovic Group"},
 {"id":{"$oid":"61aca312fc13ae32b4000012"},"title":"Sniper 2","genres":"Action|Adventure|War","rating":2.3,"director":"Isabel Silk","image_url":"http://dummyimage.com/350x250.png/ff4444/ffffff","production":"Haley Inc"},
 {"id":{"$oid":"61aca312fc13ae32b4000013"},"title":"Kidnapping, Caucasian Style (Kavkazskaya plennitsa)","genres":"Comedy|Romance","rating":2.9,"director":"Angelico Rubi","image_url":"http://dummyimage.com/350x250.png/5fa2dd/ffffff","production":"Wilkinson-Denesik"}]
-
-
-app.use(cors())
-app.use(express.json())
-app.use(bodyParser.json())
-
-// app.use(database , ()=>{})
-app.get('/',(req,res)=>{
-    res.send('server is running')
-})
-
-app.get('/getdata',(req,res)=>{
-    res.send(fakeData)
-})
-
-app.listen(PORT , (err,res)=>{
-    if(err){
-        throw new Error
-    }
-    else{
-        console.log("Server is live on http://localhost:"+PORT);
-    }
-})

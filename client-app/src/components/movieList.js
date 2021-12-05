@@ -7,9 +7,12 @@ function MovieList() {
     const [datas,setDatas]= useContext(Datacontext)
 
     useEffect(()=>{
-        setDatas(fakeData)
-        axios.get('https://jsonplaceholder.typicode.com/posts')
-        .then(res=>{console.log(res)})
+        
+        axios.get('http://localhost:8000/getdata')
+        .then(res=>{
+            console.log(res.data);
+            setDatas(res.data);
+        })
         .catch(err=>console.log(err))
     },[])
      return (
