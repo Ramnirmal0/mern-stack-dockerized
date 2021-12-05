@@ -1,5 +1,5 @@
 *{
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(54 54 54);
     color:whitesmoke;
 }
 .movie-list-container{
@@ -98,5 +98,5 @@ a{
     padding:0px 20px;
     font-size: 20px;
    text-decoration: none;
-   color: black;
+   
 }
