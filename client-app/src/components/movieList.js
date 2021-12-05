@@ -7,7 +7,7 @@ function movieList() {
             { datas.map((res,index)=>{
                 return <div className="movie-grid">
                         <div className="image-container">
-                            <img src={res.image_url}></img>
+                            <img src={res.image_url} alt="movie_thumbnail"></img>
                         </div>
                         <div className="title">{res.title}</div>
                         <div className="genres_rating">

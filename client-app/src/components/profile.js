@@ -1,11 +1,11 @@
 import React from 'react';
 
-function addNewMovie() {
+function profile() {
     return (
         <div>
-            new movies
+            my account
         </div>
     );
 }
 
-export default addNewMovie;
+export default profile;

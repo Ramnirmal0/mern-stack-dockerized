@@ -1,7 +1,6 @@
 import React from 'react';
 import SearchBar from './searchBar';
-
-
+import {Link} from 'react-router-dom'
 function navbar() {
     return (
         <div className="navbar">
@@ -10,9 +9,11 @@ function navbar() {
             </div>
             <SearchBar/>
             <div className="menu">
-                <a href="#">Home</a>
-                <a href="#">Add Movie</a>
-                <a href="#">Sign up/in</a>
+             
+                  <Link to="/">Watch</Link>
+                  <Link to="/add">Add Movie</Link>
+                  <Link to="/profile">My Profile</Link>
+               
             </div>
         </div>
     );
