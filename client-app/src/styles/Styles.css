@@ -100,3 +100,14 @@ a{
    text-decoration: none;
    
 }
+.welcomemsg{
+    margin:0px 40px;
+}
+.welcomemsg > h1{
+    font-size: 70px;
+
+}
+.welcomemsg > p{
+    font-size: 30px;
+
+}
