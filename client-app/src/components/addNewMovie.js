@@ -1,7 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function AddNewMovie() {
     const [postData,setPostData] = useState({   url:'',title:'',genre:'Drama',rating:1.0, director:'',production:''});
+
+    const sentData = (e)=>{
+        e.preventDefault()
+        axios.post('https://jsonplaceholder.typicode.com/posts',postData)
+        .then(res=>{console.log(res)})
+        .catch(err=>{console.log(err)})
+
+    }
+
     return (
         <div className="add-movie-container">
         <form>
@@ -42,7 +52,7 @@ function AddNewMovie() {
             </div>
 
             <div className="form-col">
-            <button className="submit" >Add new Movie</button>
+            <button className="submit" onClick={(e)=>sentData(e)}>Add new Movie</button>
             <button className="reset" type="submit">Reset</button>
             </div>
         </form>

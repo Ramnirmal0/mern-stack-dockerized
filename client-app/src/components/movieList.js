@@ -1,7 +1,17 @@
-import React from 'react';
-import datas from '../fake_movie_list.json'
+import React, { useContext, useEffect } from 'react';
+import { Datacontext } from '../context/dataProvider';
+import fakeData from '../fake_movie_list.json'
+import axios from 'axios'
 
-function movieList() {
+function MovieList() {
+    const [datas,setDatas]= useContext(Datacontext)
+
+    useEffect(()=>{
+        setDatas(fakeData)
+        axios.get('https://jsonplaceholder.typicode.com/posts')
+        .then(res=>{console.log(res)})
+        .catch(err=>console.log(err))
+    },[])
      return (
         <div className="movie-list-container">
             { datas.map((res,index)=>{
@@ -29,4 +39,4 @@ function movieList() {
     );
 }
 
-export default movieList;
+export default MovieList;

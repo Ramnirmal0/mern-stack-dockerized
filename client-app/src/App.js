@@ -3,6 +3,7 @@ import MovieList from './components/movieList';
 import Navbar from './components/navbar';
 import AddNewMovie from './components/addNewMovie';
 import Profile from './components/profile';
+import { DataProvider } from './context/dataProvider';
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,6 +14,7 @@ function App() {
   return (
    <Router>
     <div className="App">
+      <DataProvider>
           <Navbar/>
             <Switch>
                 <Route exact path="/">
@@ -37,6 +39,7 @@ function App() {
                               <Profile/>
                 </Route>
             </Switch>
+        </DataProvider>
     </div>
       </Router>
   );
