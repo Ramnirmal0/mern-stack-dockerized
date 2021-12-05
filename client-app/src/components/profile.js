@@ -2,8 +2,8 @@ import React from 'react';
 
 function profile() {
     return (
-        <div>
-            my account
+        <div className="profile-container">
+            my account is currently unavailable
         </div>
     );
 }

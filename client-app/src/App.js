@@ -13,21 +13,28 @@ function App() {
   return (
    <Router>
     <div className="App">
-     
           <Navbar/>
-      <div className="welcomemsg">
-                      <h1>Welcome User !</h1>
-                      <p>We handpicked few movies that you might interested</p>
-                      </div>
             <Switch>
                 <Route exact path="/">
-                    <MovieList/>
+                              <div className="welcomemsg">
+                                  <h1>Welcome User !</h1>
+                                  <p>We handpicked few movies that you might interested</p>
+                              </div>
+                              <MovieList/>
                 </Route>
                 <Route exact path="/add">
-                    <AddNewMovie/>
+                              <div className="welcomemsg">
+                                  <h1>Add new Movie User !</h1>
+                                  <p>We are now crowd sourcing movie from creators like you</p>
+                              </div>
+                              <AddNewMovie/>
                 </Route>
                 <Route exact path="/profile">
-                    <Profile/>
+                              <div className="welcomemsg">
+                                  <h1>My Profile</h1>
+                                  <p>Edit you profile . Update your billing details</p>
+                              </div>
+                              <Profile/>
                 </Route>
             </Switch>
     </div>
